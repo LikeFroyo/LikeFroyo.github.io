@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BlackJack Game</title>
+    <link type="text/css" rel="stylesheet" href="BlackJack.css">
+</head>
+
+<body>
+    <!--Popups For Events-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p id="resultBanner"></p>
+            <a class="close" href="BlackJack.html">HOME</a>
+        </div>
+    </div>
+
+    <!--Player & Dealer Area-->
+    <div id="main">
+        <div id="player">
+            <div class="ScoreBoard">
+                <p>PLAYER SCORE --$</p>
+                <p id="playerScoreBoard">0</p>
+            </div>
+            <ul id="playerCardsUL"></ul>
+        </div>
+        <div id="dealer">
+            <div class="ScoreBoard">
+                <p>DEALER SCORE --$</p>
+                <p id="dealerScoreBoard">0</p>
+            </div>
+            <ul id="dealerCardsUL"></ul>
+        </div>
+    </div>
+
+    <!--Player & Dealer Controller-->
+    <div id="controller">
+        <div id="startGame">
+            <input type="button" onclick="StartGame()" id="deal" value="DEAL">
+        </div>
+        <div id="playGame">
+            <input type="button" onclick="HitPlayer()" id="hit" value="HIT">
+            <input type="button" onclick="Stand()" id="stand" value="STAND">
+        </div>
+    </div>
+
+    <script src="min.js"></script>
+
+</body>
+
+</html>
