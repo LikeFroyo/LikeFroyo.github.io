@@ -93,9 +93,9 @@ body{
 }
 input{
     font-weight: bold;
-    font-size: medium;
-    width: 25vh;
-    height: 10vh;
+    font-size: 100%;
+    width: 25%;
+    height: 100%;
     display: inline-block;
     border-radius: 25px;
 }
